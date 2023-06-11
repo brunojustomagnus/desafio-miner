@@ -65,8 +65,6 @@ class Kernel extends HttpKernel
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        'check.admin' => \App\Http\Middleware\CheckUserCategoryAdmin::class,
-        'check.teacher' => \App\Http\Middleware\CheckUserCategoryTeacher::class,
-        'check.student' => \App\Http\Middleware\CheckUserCategoryStudent::class,
+        'check.admin' => \App\Http\Middleware\CheckUserCategoryAdmin::class, // check.admin é o nome dado para o middleware criado para verificar se o usuario é diferente de admin e então redirecionar para view de não autorizado!
     ];
 }
