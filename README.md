@@ -16,7 +16,7 @@ O administrador poderá visualizar algumas coisas das quais os usuários sem per
 
 ## Sobre o Projeto
 
-Sistema feito em Laravel na versão 9.19. Abaixo cito algumas tecnologias usadas no projeto.
+Sistema feito em Laravel na versão 9.19. Abaixo cito algumas tecnologias usadas no projeto. Versão do **PHP usado foi: PHP 8.1.10**  
 
 **Seeders:** Os seeders são arquivos utilizados em frameworks de desenvolvimento web, como o Laravel, para popular o banco de dados com dados pré-definidos. Eles são uma forma de automatizar o processo de inserção de dados e garantir que, durante o desenvolvimento e teste de uma aplicação, o banco de dados tenha dados para serem usados. Com os seeders, é possível inserir dados iniciais, criar usuários e atribuir permissões, etc.
 
