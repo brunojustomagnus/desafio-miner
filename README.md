@@ -34,7 +34,7 @@ Sistema feito em Laravel na versão 9.19. Abaixo cito algumas tecnologias usadas
 
 - Faça o clone do repositório e cole no terminal com um **git clone**.
 
-- Encontre o arquivo chamado **.env.example** que está fora das pastas e apague o ".example" e deixe apenas **.env**. Ele é o arquivo que fará a conexão com o seu banco de dados. 
+- Encontre o arquivo chamado **.env.example** que está fora das pastas e renomeie-o tirando o ".example" e deixe apenas **.env**. Ele é o arquivo que fará a conexão com o seu banco de dados. 
 
 - Rode o comando **composer install** para instalar todas dependencias de bibliotecas utilizadas no projeto.
 
