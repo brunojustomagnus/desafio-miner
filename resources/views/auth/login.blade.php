@@ -80,7 +80,7 @@
               <div class="card card-plain">
                 <div class="card-header pb-0 text-start">
                   <h4 class="font-weight-bolder">Credenciais do teste:</h4>
-                  <p class="mb-0">Email: bruno@teste | Senha: teste123</p>
+                  <p class="mb-0">Email: admin@teste | Senha: teste123</p>
                 </div>
                 <div class="card-body">
                   <form role="form" method="POST" action="{{ route('login') }}">

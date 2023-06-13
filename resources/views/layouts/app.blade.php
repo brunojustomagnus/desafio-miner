@@ -80,7 +80,7 @@
         <li class="nav-item">
           <a class="nav-link " href="{{ route('product-category.index')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <img src="{{url('/assets/img/clients-icon.png')}}" class="navbar-brand-img h-100" alt="main_logo">
+              <img src="{{url('/assets/img/category.png')}}" class="navbar-brand-img h-100" alt="main_logo">
             </div>
             <span class="nav-link-text ms-1">Categorias de produtos</span>
           </a>
@@ -88,7 +88,7 @@
         <li class="nav-item">
           <a class="nav-link " href="{{ route('brand.index')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <img src="{{url('/assets/img/clients-icon.png')}}" class="navbar-brand-img h-100" alt="main_logo">
+              <img src="{{url('/assets/img/badge.png')}}" class="navbar-brand-img h-100" alt="main_logo">
             </div>
             <span class="nav-link-text ms-1">Marcas</span>
           </a>
@@ -96,7 +96,7 @@
         <li class="nav-item">
           <a class="nav-link " href="{{ route('product.index')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <img src="{{url('/assets/img/clients-icon.png')}}" class="navbar-brand-img h-100" alt="main_logo">
+              <img src="{{url('/assets/img/product.png')}}" class="navbar-brand-img h-100" alt="main_logo">
             </div>
             <span class="nav-link-text ms-1">Produtos</span>
           </a>
@@ -117,7 +117,7 @@
         <li class="nav-item">
           <a class="nav-link " href="{{ route('product-category.index')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <img src="{{url('/assets/img/clients-icon.png')}}" class="navbar-brand-img h-100" alt="main_logo">
+              <img src="{{url('/assets/img/category.png')}}" class="navbar-brand-img h-100" alt="main_logo">
             </div>
             <span class="nav-link-text ms-1">Categorias de produtos</span>
           </a>
@@ -125,7 +125,7 @@
         <li class="nav-item">
           <a class="nav-link " href="{{ route('brand.index')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <img src="{{url('/assets/img/clients-icon.png')}}" class="navbar-brand-img h-100" alt="main_logo">
+              <img src="{{url('/assets/img/badge.png')}}" class="navbar-brand-img h-100" alt="main_logo">
             </div>
             <span class="nav-link-text ms-1">Marcas</span>
           </a>
@@ -133,7 +133,7 @@
         <li class="nav-item">
           <a class="nav-link " href="{{ route('product.index')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <img src="{{url('/assets/img/clients-icon.png')}}" class="navbar-brand-img h-100" alt="main_logo">
+              <img src="{{url('/assets/img/product.png')}}" class="navbar-brand-img h-100" alt="main_logo">
             </div>
             <span class="nav-link-text ms-1">Produtos</span>
           </a>
@@ -154,7 +154,7 @@
         <li class="nav-item">
           <a class="nav-link " href="{{ route('product.index')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <img src="{{url('/assets/img/clients-icon.png')}}" class="navbar-brand-img h-100" alt="main_logo">
+              <img src="{{url('/assets/img/product.png')}}" class="navbar-brand-img h-100" alt="main_logo">
             </div>
             <span class="nav-link-text ms-1">Produtos</span>
           </a>
