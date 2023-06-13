@@ -68,6 +68,5 @@ class Kernel extends HttpKernel
         'check.admin' => \App\Http\Middleware\CheckUserCategoryAdmin::class,
         'check.gerente' => \App\Http\Middleware\CheckUserCategoryGerente::class,
         'check.comum' => \App\Http\Middleware\CheckUserCategoryComum::class,
-        'check.admin' => \App\Http\Middleware\CheckUserCategoryAdmin::class, // check.admin é o nome dado para o middleware criado para verificar se o usuario é diferente de admin e então redirecionar para view de não autorizado!
     ];
 }
