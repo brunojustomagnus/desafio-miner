@@ -22,11 +22,11 @@
             @method('PUT')
             <div class="row">
               <div class="row">
-                <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
+                <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-4">
                   <label for="user_name">Nome:</label>
                   <input type="text" class="form-control" id="user_name" name="user_name"  value="{{ $user->user_name }}" required>
                 </div>
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-4">
                   <label for="user_category_id">Categoria:</label>
                   <select class="form-select" name="user_category_id" id="user_category_id" required>
                       @foreach($categories as $category)
@@ -36,13 +36,9 @@
                       @endforeach
                   </select>
                 </div>
-                <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
+                <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-4">
                   <label for="email">Email:</label>
                   <input type="email" class="form-control" id="email" name="email"  value="{{ $user->email }}" required>
-                </div>
-                <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
-                  <label for="password">Senha:</label>
-                  <input type="password" class="form-control" id="password" name="password" value="{{ $user->password }}" required>
                 </div>
               </div>
             </div>

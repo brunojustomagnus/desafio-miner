@@ -21,6 +21,9 @@ class UserController extends Controller
     }
     public function store(Request $request)
     {
+        if ($request->user_category_id == '#') {
+            return redirect()->back()->withErrors(['user_category_id' => 'A seleção de uma categoria é obrigatória.']);
+        }
         $data = $request->all();
         $data['password'] = Hash::make($data['password']);
     

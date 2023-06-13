@@ -25,11 +25,14 @@
                   <div class="form-group col-md-3">
                     <label for="user_category_id">Categoria:</label>
                     <select class="form-select" name="user_category_id" id="user_category_id" required>
-                        <option value="#">Selecione...</option>
-                        @foreach($categories as $category)
-                            <option value="{{ $category->id }}">{{ $category->category_users_name }}</option>
-                        @endforeach
+                      <option value="#">Selecione...</option>
+                      @foreach($categories as $category)
+                          <option value="{{ $category->id }}">{{ $category->category_users_name }}</option>
+                      @endforeach
                     </select>
+                    @error('user_category_id')
+                     <span class="text-danger">{{ $message }}</span>
+                    @enderror
                   </div>
                   <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
                     <label for="email">Email:</label>
