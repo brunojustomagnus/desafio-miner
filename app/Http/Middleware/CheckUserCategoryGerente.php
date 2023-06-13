@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\CategoryUser;
 use Illuminate\Support\Facades\Auth;
-class CheckUserCategoryAdmin
+class CheckUserCategoryGerente
 {
     /**
      * Handle an incoming request.
@@ -21,12 +21,12 @@ class CheckUserCategoryAdmin
         // Verifique se o usuário está autenticado
         if (Auth::check()) {
             $user_category = Auth::user()->user_category_id;
-
-            if ($user_category != CategoryUser::ADMIN) {
-                abort(403, 'Acesso não autorizado');
+    
+            if ($user_category != CategoryUser::ADMIN && $user_category != CategoryUser::GERENTE) {
+                abort(403, 'Acesso não autorizado.');
             }
         }
-
+    
         return $next($request);
-    }
+    }    
 }

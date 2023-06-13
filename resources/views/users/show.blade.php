@@ -18,12 +18,38 @@
           
         <div class="card-body">
           <form action="{{ route('users.update', $user->id) }}" method="POST">
-              @csrf
-              @method('PUT')
-                <div class="row">
-                  <h5 style="padding-left: 35px; padding-right: 35px;">Olá Miner!</h5>
-                  <br><br>
+            @csrf
+            @method('PUT')
+            <div class="row">
+              <div class="row">
+                <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
+                  <label for="user_name">Nome:</label>
+                  <input type="text" class="form-control" id="user_name" name="user_name"  value="{{ $user->user_name }}" required>
                 </div>
+                <div class="form-group col-md-3">
+                  <label for="user_category_id">Categoria:</label>
+                  <select class="form-select" name="user_category_id" id="user_category_id" required>
+                      @foreach($categories as $category)
+                          <option value="{{ $category->id }}" {{ $category->id == $user->user_category_id ? 'selected' : '' }}>
+                              {{ $category->category_users_name }}
+                          </option>
+                      @endforeach
+                  </select>
+                </div>
+                <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email"  value="{{ $user->email }}" required>
+                </div>
+                <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
+                  <label for="password">Senha:</label>
+                  <input type="password" class="form-control" id="password" name="password" value="{{ $user->password }}" required>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div style="padding-left: 25px; padding-right: 25px;" class="d-flex justify-content-start">
+                <button type="submit" class="btn btn-primary me-2">Salvar alterações</button>
+                <a href="{{ route('users.index') }}" class="btn btn-secondary">Cancelar</a>
             </div>
           </form>
         </div>
@@ -31,8 +57,6 @@
     </div>
   </div>
 <script>
- $('#myModal').on('show.bs.modal', function (e) {
-  if (!data) return e.preventDefault() // stops modal from being shown
-})
+
 </script>
 </x-app-layout>

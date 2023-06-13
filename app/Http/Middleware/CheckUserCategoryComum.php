@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\CategoryUser;
 use Illuminate\Support\Facades\Auth;
-class CheckUserCategoryAdmin
+class CheckUserCategoryComum
 {
     /**
      * Handle an incoming request.
@@ -22,7 +22,7 @@ class CheckUserCategoryAdmin
         if (Auth::check()) {
             $user_category = Auth::user()->user_category_id;
 
-            if ($user_category != CategoryUser::ADMIN) {
+            if ($user_category != CategoryUser::ADMIN && $user_category != CategoryUser::GERENTE  && $user_category != CategoryUser::COMUM) {
                 abort(403, 'Acesso não autorizado');
             }
         }

@@ -20,15 +20,21 @@ class UserSd extends Seeder
     {
         $users = [
             [
-                'user_name'                => 'Bruno Justo',
+                'user_name'                => 'Admin',
                 'user_category_id'         => CategoryUser::ADMIN, // 1
-                'email'                    => 'bruno@teste',   
+                'email'                    => 'admin@teste',   
                 'password'                 => Hash::make('teste123'),
             ],
             [
-                'user_name'                => 'Usuario teste',
-                'user_category_id'         => CategoryUser::COMUM, // 2
-                'email'                    => 'usuario@teste',   
+                'user_name'                => 'Gerente',
+                'user_category_id'         => CategoryUser::GERENTE, // 2
+                'email'                    => 'gerente@teste',   
+                'password'                 => Hash::make('teste123'),
+            ],
+            [
+                'user_name'                => 'Comum',
+                'user_category_id'         => CategoryUser::COMUM, // 3
+                'email'                    => 'comum@teste',   
                 'password'                 => Hash::make('teste123'),
             ],
         ];

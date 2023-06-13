@@ -21,6 +21,10 @@ class CategoryUserSd extends Seeder
                 'category_users_name'    => 'Administrador',  
             ],
             [
+                'id'                     => CategoryUser::GERENTE,
+                'category_users_name'    => 'Gerente',
+            ],
+            [
                 'id'                     => CategoryUser::COMUM,
                 'category_users_name'    => 'Comum',
             ],

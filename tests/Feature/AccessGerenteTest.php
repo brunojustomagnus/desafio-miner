@@ -6,16 +6,16 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use App\Models\User;
-class AccessComumTest extends TestCase
+class AccessGerenteTest extends TestCase
 {
     /**
      * A basic feature test example.
      *
      * @return void
      */
-    public function testComumCanSeeUsersMenu()
+    public function test_example()
     {
-        $user = User::find(3); // Usuário de id 3 que possui user_category_id = Comum (3)
+        $user = User::find(2); // Usuário de id 2 que possui user_category_id = Gerente (2)
         $this->actingAs($user);
         $response = $this->get(route('users.index'));
         $response->assertStatus(403);

@@ -9,7 +9,8 @@ class CategoryUser extends Model
 {
     use HasFactory;
     public const ADMIN = 1; 
-    public const COMUM = 2; 
+    public const GERENTE = 2; 
+    public const COMUM = 3; 
 
     // Adicione o seguinte método na classe User do seu model
     public function users()

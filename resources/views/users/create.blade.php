@@ -15,36 +15,37 @@
               </div>
 
               <form action="{{ route('users.store') }}" method="POST">
-                  @csrf
-                  <div class="row">
-                    <h5 style="padding-left: 35px; padding-right: 35px;">Dados Pessoais</h5>
-                    <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
-                      <label for="user_name">Nome:</label>
-                      <input type="text" class="form-control" id="user_name" name="user_name" required>
-                    </div>
-                    <div class="form-group col-md-3">
-                      <label for="user_category_id">Categoria:</label>
-                      <select class="form-select" name="user_category_id" id="user_category_id" required>
+                @csrf
+                <div class="row">
+                  <h5 style="padding-left: 35px; padding-right: 35px;">Dados Pessoais</h5>
+                  <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
+                    <label for="user_name">Nome:</label>
+                    <input type="text" class="form-control" id="user_name" name="user_name" required>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="user_category_id">Categoria:</label>
+                    <select class="form-select" name="user_category_id" id="user_category_id" required>
                         <option value="#">Selecione...</option>
-                        <option value="1">Administrador</option>
-                        <option value="2">Comum</option>
-                      </select>
-                    </div>
-                    <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
-                      <label for="email">Email:</label>
-                      <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
-                      <label for="password">Senha:</label>
-                      <input type="password" class="form-control" id="password" name="password" required>
-                    </div>
+                        @foreach($categories as $category)
+                            <option value="{{ $category->id }}">{{ $category->category_users_name }}</option>
+                        @endforeach
+                    </select>
                   </div>
-                  <br>
-  
-                  <div style="padding-left: 25px; padding-right: 25px;" class="d-flex justify-content-start">
-                    <button type="submit" class="btn btn-primary me-2">Salvar</button>
-                    <a href="{{ route('users.index') }}" class="btn btn-secondary">Cancelar</a>
+                  <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                   </div>
+                  <div style="padding-left: 35px; padding-right: 35px;" class="form-group col-md-3">
+                    <label for="password">Senha:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                  </div>
+                </div>
+                <br>
+
+                <div style="padding-left: 25px; padding-right: 25px;" class="d-flex justify-content-start">
+                  <button type="submit" class="btn btn-primary me-2">Salvar</button>
+                  <a href="{{ route('users.index') }}" class="btn btn-secondary">Cancelar</a>
+                </div>
               </form>
             </div>
           </div>
