@@ -47,6 +47,7 @@ Sistema feito em Laravel na versão 9.19. Abaixo cito algumas tecnologias usadas
 - Acesse a url http://127.0.0.1:8000 para efetuar Login.
 
 - Você poderá fazer login com esses usuários:
+
 Admin: **Email:** admin@teste e **Senha:** teste123 (Acesso a tudo)
 Gerente: **Email:** gerente@teste e **Senha:** teste123 (Acesso a quase tudo, com exceção de usuários e de permissão de excluir as coisas)
 Comum: **Email:** comum@teste e **Senha:** teste123 (Acesso somente a visualizar index de produtos)
